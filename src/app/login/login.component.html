@@ -1,0 +1,38 @@
+<div class="center-con">
+    <div class="login" *ngIf="login_signup === 'login'">
+        <div class="fields">
+            <div class="input-group-wrap">
+                <div class="input-control">
+                    <input type="text" class="text-input" placeholder="Enter Email here">
+                </div>
+                <div class="input-control">
+                    <input type="text" class="text-input" placeholder="Enter Password here">
+                </div>
+                <a (click)="login_signup = 'signUp'">Not a member? Sign Up</a>
+                <button>Login</button>
+            </div>
+        </div>
+        <div class="backgrond-img"></div>
+    </div>
+    <div class="signup" *ngIf="login_signup === 'signUp'">
+        <div class="backgrond-img"></div>
+        <div class="fields">
+            <div class="input-group-wrap">
+                <div class="input-control">
+                    <input type="text" class="text-input" placeholder="Enter Name here">
+                </div>
+                <div class="input-control">
+                    <input type="text" class="text-input" placeholder="Enter Phone here">
+                </div>
+                <div class="input-control">
+                    <input type="text" class="text-input" placeholder="Enter Email here">
+                </div>
+                <div class="input-control">
+                    <input type="text" class="text-input" placeholder="Enter Password here">
+                </div>
+                <a (click)="login_signup = 'login'">Already a member? Log In.</a>
+                <button>Login</button>
+            </div>
+        </div>
+    </div>
+</div>

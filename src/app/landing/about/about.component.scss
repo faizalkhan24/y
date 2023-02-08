@@ -1,0 +1,62 @@
+.about-page{
+    .about-inner-wrap{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .about-main-title{
+            text-align: center;
+            font-size: 36px;
+            font-family: var(--app-font-secondary);
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--app-main);
+        }
+        .para-wrap{
+            margin: 0 150px;
+            padding: 10px 40px;
+            color: var(--app-secondary-step-50);
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: var(--app-font);
+            text-align: justify;
+        }
+        .about-img{
+            width: 400px;
+            border: 15px inset #ffc55b;
+        }
+        .service-cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            padding: 20px;
+            background: rgb(77,255,120);
+            background: linear-gradient(152deg, rgba(77, 255, 119, 0.174) 0%, rgba(34, 206, 37, 0.19) 35%, rgba(0, 213, 255, 0.174) 100%);
+            .service-card{
+                margin: 10px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                border-radius: 10px;
+                width: 150px;
+                height: 200px;
+                padding: 10px;
+                background: rgb(48 200 72 / 22%);
+                img{
+                    width: 100px;
+                    filter: invert(1);
+                    margin-bottom: 20px;
+                    
+                }
+                p{
+                    color: var(--app-main-contrast);
+                    text-align: center;
+                    height: 15%;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
